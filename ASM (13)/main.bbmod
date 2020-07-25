@@ -1,0 +1,19 @@
+appendASM("glow.asm");
+patchJMP(0x2D778, "won");
+addSymbol("text", 0x2D77D);
+
+appendASM("glow2.asm");
+patchJMP(0x2A6F0, "lost");
+addSymbol("text2", 0x2A6F5);
+
+appendASM("midnightfix.asm");
+patchJMP(0xA25F, "startmvfix");
+addSymbol("endmvfix", 0xA75F);
+
+patchBytes(0xA9D3, 0xB);
+patchBytes(0xA9F4, 0x2);
+patchBytes(0xAA15, 0x3);
+patchBytes(0xAA36, 0x4);
+patchBytes(0xAA57, 0x5);
+patchBytes(0xAA78, 0x6);
+patchBytes(0xAA99, 0x7);

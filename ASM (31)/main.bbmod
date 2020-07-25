@@ -1,0 +1,6 @@
+
+removeRelReloc(0x2850E);
+
+appendASM("asgstar.asm");
+patchJMP(0x2850C, "startprg");
+addSymbol("endprg", 0x28512);

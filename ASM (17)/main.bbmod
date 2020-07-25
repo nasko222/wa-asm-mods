@@ -1,0 +1,23 @@
+removeAbsReloc(0x6649);
+
+appendASM("welldone.asm");
+patchJMP(0x6647, "youhavelost");
+addSymbol("thisadventure", 0x66D2);
+
+removeAbsReloc(0x24E06);
+
+appendASM("fixadv.asm");
+patchJMP(0x24E04, "younot");
+addSymbol("stuck", 0x24E1E);
+
+appendASM("donot.asm");
+patchJMP(0x24E5F, "clear");
+addSymbol("myinv", 0x24E66);
+
+appendASM("glow.asm");
+patchJMP(0x27D86, "won");
+addSymbol("text", 0x27D8B);
+
+appendASM("glow2.asm");
+patchJMP(0x2AB77, "lost");
+addSymbol("text2", 0x2AB7C);

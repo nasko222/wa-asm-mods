@@ -1,0 +1,15 @@
+appendASM("wasd.asm");
+patchJMP(0x64ED, "up");
+addSymbol("endprogram", 0x64FC);
+
+appendASM("wasd.asm");
+patchJMP(0x65B4, "down");
+addSymbol("endprogram2", 0x65C3);
+
+appendASM("wasd.asm");
+patchJMP(0x66A5, "left");
+addSymbol("endprogram3", 0x66B3);
+
+appendASM("wasd.asm");
+patchJMP(0x676C, "right");
+addSymbol("endprogram4", 0x677A);

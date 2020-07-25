@@ -1,0 +1,11 @@
+appendASM("glow.asm");
+patchJMP(0x27D86, "won");
+addSymbol("text", 0x27D8B);
+
+appendASM("glow2.asm");
+patchJMP(0x2AB77, "lost");
+addSymbol("text2", 0x2AB7C);
+
+appendASM("something.asm");
+patchJMP(0x8E48, "flystart");
+addSymbol("flyend", 0x8E78);

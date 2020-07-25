@@ -1,0 +1,6 @@
+
+removeRelReloc(0x2AE0E);
+
+appendASM("program.asm");
+patchJMP(0x2AE0C, "startprg");
+addSymbol("endprg", 0x2AE12);

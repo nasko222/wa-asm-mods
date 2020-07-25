@@ -1,0 +1,3 @@
+appendASM("invfix.asm");
+patchJMP(0x6A841, "startinvfix");
+addSymbol("endinvfix", 0x6A8BD);

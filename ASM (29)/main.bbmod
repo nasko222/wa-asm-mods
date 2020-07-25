@@ -1,0 +1,5 @@
+removeAbsReloc(0x5CA2);
+
+appendASM("vault.asm");
+patchJMP(0x5CA0, "mid");
+addSymbol("night", 0x5CAF);

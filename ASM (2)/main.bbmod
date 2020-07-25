@@ -1,0 +1,3 @@
+appendASM("wasd.asm");
+patchJMP(0x69F0, "swasd");
+addSymbol("ewasd", 0x69F7);

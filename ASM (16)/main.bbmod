@@ -1,0 +1,22 @@
+removeAbsReloc(0x6A99);
+
+appendASM("welldone.asm");
+patchJMP(0x6A97, "youhavelost");
+addSymbol("thisadventure", 0x6B22);
+
+removeAbsReloc(0x2C854);
+appendASM("guggenheimer.asm");
+patchJMP(0x2C852, "asg");
+addSymbol("restore", 0x2C862);
+
+appendASM("fixadv.asm");
+patchJMP(0xAACFF, "finally");
+addSymbol("gg", 0xAAD2F);
+
+appendASM("glow.asm");
+patchJMP(0x2A690, "won");
+addSymbol("text", 0x2A695);
+
+appendASM("glow2.asm");
+patchJMP(0x2D718, "lost");
+addSymbol("text2", 0x2D71D);

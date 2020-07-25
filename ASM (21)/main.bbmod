@@ -1,0 +1,12 @@
+appendASM("menufix.asm");
+patchJMP(0x577F, "try");
+addSymbol("parse", 0x5789);
+
+removeAbsReloc(0x571D);
+appendASM("shmatka.asm");
+patchJMP(0x571B, "nz");
+addSymbol("guz", 0x5725);
+
+appendASM("zvezda.asm");
+patchJMP(0x5D7F, "mama");
+addSymbol("papa", 0x5D84);

@@ -1,0 +1,3 @@
+appendASM("addfive.asm");
+patchJMP(0x706A, "addme");
+addSymbol("five", 0x709A);

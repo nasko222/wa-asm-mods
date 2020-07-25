@@ -1,0 +1,3 @@
+appendASM("asg.asm");
+patchJMP(0x49651, "asging");
+addSymbol("asged", 0x49680);

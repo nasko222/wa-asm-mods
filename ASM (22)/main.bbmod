@@ -1,0 +1,69 @@
+//bugfix
+removeRelReloc(0x23BA2);
+
+//magic icon keeping
+appendASM("thestarmagic1.asm");
+patchJMP(0x23BA0, "star1");
+addSymbol("estar1", 0x23BA6);
+
+appendASM("thestarmagic2.asm");
+patchJMP(0x23BD0, "star2");
+addSymbol("estar2", 0x23C01);
+
+appendASM("thestarmagic3.asm");
+patchJMP(0x24B57, "star3");
+addSymbol("estar3", 0x24B63);
+
+//unfreeze with star magic
+appendASM("unfrooz.asm");
+patchJMP(0x7064F, "frooz");
+addSymbol("efrooz", 0x707C3);
+
+appendASM("icecubecase.asm");
+patchJMP(0x70A48, "unfreeze");
+addSymbol("unfrozen", 0x70AAD);
+
+//player
+appendASM("case1.asm");
+patchJMP(0x709A0, "prg1");
+addSymbol("eprg1", 0x709D3);
+
+//npc
+appendASM("case400.asm");
+patchJMP(0x70AB9, "prg400");
+addSymbol("eprg400", 0x70AEC);
+
+//wee stinker
+appendASM("case120.asm");
+patchJMP(0x70B61, "prg120");
+addSymbol("eprg120", 0x70B94);
+
+//scritter
+appendASM("case150.asm");
+patchJMP(0x70C09, "prg150");
+addSymbol("eprg150", 0x70C3C);
+
+//fireflower
+appendASM("case230.asm");
+patchJMP(0x70D80, "prg230");
+addSymbol("eprg230", 0x70DB3);
+
+//boxes
+appendASM("case242.asm");
+patchJMP(0x70E28, "prg242");
+addSymbol("eprg242", 0x70E5B);
+
+//crab
+appendASM("case370.asm");
+patchJMP(0x70E67, "prg370");
+addSymbol("eprg370", 0x70F4D);
+
+//chomper, spikeyball, thwart, troll, crab(again?), coily, zbot, ufo, ghost(again?), wraith(again?)
+appendASM("case431.asm");
+patchJMP(0x71287, "prg431");
+addSymbol("eprg431", 0x712BA);
+
+//wysp
+appendASM("case330.asm");
+patchJMP(0x7132F, "prg330");
+addSymbol("eprg330", 0x71362);

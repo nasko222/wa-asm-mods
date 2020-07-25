@@ -1,0 +1,15 @@
+appendASM("rucksack.asm");
+patchJMP(0x6A82E, "startruck");
+addSymbol("endruck", 0x6A8E8);
+
+appendASM("nomidstop.asm");
+patchJMP(0x551B, "startnomid");
+addSymbol("endnomid", 0x5542);
+
+appendASM("whistlefix.asm");
+patchJMP(0x68E13, "startwhis");
+addSymbol("endwhis", 0x690C8);
+
+appendASM("cmdcases.asm");
+patchJMP(0x6216A, "startcase");
+addSymbol("endcase", 0x62170);

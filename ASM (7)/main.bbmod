@@ -1,0 +1,7 @@
+appendASM("stinkerkaboom.asm");
+patchJMP(0x3A589, "stinkerstart");
+addSymbol("kaboomend", 0x3A58F);
+
+appendASM("kaboomnpc.asm");
+patchJMP(0x3AD8B, "startboom");
+addSymbol("npcing", 0x3ADA5);

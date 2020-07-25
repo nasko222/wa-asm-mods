@@ -1,0 +1,3 @@
+appendASM("weestinker.asm");
+patchJMP(0x2FD17, "okeydokey");
+addSymbol("imtired", 0x2FD1D);

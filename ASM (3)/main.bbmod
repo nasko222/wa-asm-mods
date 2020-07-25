@@ -1,0 +1,3 @@
+appendASM("infiniblink.asm");
+patchJMP(0x1C56F, "startblinking");
+addSymbol("endblinking", 0x1C579);

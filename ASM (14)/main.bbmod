@@ -1,0 +1,3 @@
+appendASM("something.asm");
+patchJMP(0x8E48, "flystart");
+addSymbol("flyend", 0x8E78);

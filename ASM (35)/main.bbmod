@@ -1,0 +1,195 @@
+// Patch Max Player Count - Array Sizes
+patchBytes(0x565, 0x5);  // _aplayermesh
+patchBytes(0x59D, 0x5);  // _aplayerexists
+patchBytes(0x5D5, 0x5);  // _afocusonplayer
+patchBytes(0x60D, 0x5);  // _aplayerentity
+patchBytes(0x645, 0x5);  // _aplayershadowentity
+patchBytes(0x67D, 0x5);  // _aplayertexture
+patchBytes(0x6B5, 0x5);  // _aplayertextureb
+patchBytes(0x6ED, 0x5);  // _aplayertexturec
+patchBytes(0x725, 0x5);  // _aplayertextured
+patchBytes(0x75D, 0x5);  // _aplayerx
+patchBytes(0x795, 0x5);  // _aplayery
+patchBytes(0x7CD, 0x5);  // _aplayerx2
+patchBytes(0x805, 0x5);  // _aplayery2
+patchBytes(0x83D, 0x5);  // _aplayermoving
+patchBytes(0x875, 0x5);  // _aplayermovingx
+patchBytes(0x8AC, 0x5);  // _aplayermovingy
+patchBytes(0x8E5, 0x5);  // _aplayermovingtimer
+patchBytes(0x91D, 0x5);  // _aplayerspeed
+patchBytes(0x955, 0x5);  // _aplayerrotationgoal
+patchBytes(0x98D, 0x5);  // _aplayerrotation
+patchBytes(0x9C5, 0x5);  // _aplayerdying
+patchBytes(0x9FD, 0x5);  // _aplayerdyingtimer
+patchBytes(0xA35, 0x5);  // _aplayerdead
+patchBytes(0xA6D, 0x5);  // _aplayershrink
+patchBytes(0xAA5, 0x5);  // _aplayeranimcurrent
+patchBytes(0xADD, 0x5);  // _aplayeranimnew
+patchBytes(0xB15, 0x5);  // _aplayeridlecounter
+patchBytes(0xB4D, 0x5);  // _aplayerblinkcounter
+patchBytes(0xB85, 0x5);  // _aplayerbeforeblinktexture
+patchBytes(0xBBD, 0x5);  // _aplayeron
+patchBytes(0xBF5, 0x5);  // _axsbomb
+patchBytes(0xC2D, 0x5);  // _aysbomb
+patchBytes(0xC6F, 0x5);  // _aplayerview3drotation
+patchBytes(0x25F3, 0x5); // _aplayerjumping
+patchBytes(0x262B, 0x5); // _aplayerjumpingspeed
+patchBytes(0x2663, 0x5); // _aplayerjumpingdistance
+patchBytes(0x269B, 0x5); // _aplayerjumpingx
+patchBytes(0x26D3, 0x5); // _aplayerjumpingy
+patchBytes(0x2CED, 0x5); // _asfxpbounce-1
+patchBytes(0x2CFF, 0x5); // _asfxpbounce-2
+patchBytes(0x2D37, 0x5); // _asfxplayerconvey
+patchBytes(0x2D6F, 0x5); // _asfxplayercoin
+patchBytes(0x2DA7, 0x5); // _asfxplayerbonus
+patchBytes(0x2DDF, 0x5); // _asfxplayerend
+patchBytes(0x2E17, 0x5); // _asfxplayerclock
+patchBytes(0x2E4F, 21); // _asfxtalk
+
+// Patch Max Player Count - Function Calls and Variables
+patchBytes(0x27DE3, 0x5); // _fcanplayermove
+patchBytes(0x384A0, 0x5); // _fplayersteponteleporter
+patchBytes(0x2AD86, 0x5); // _fswitchplayer-1
+patchBytes(0x2AEB7, 0x5); // _fswitchplayer-2
+patchBytes(0x2B038, 0x5); // _fswitchplayer-3
+patchBytes(0x2ADF8, 0x6); // _fswitchplayer-4 this needs to be +1
+patchBytes(0x8865, 0x5);  // _fupdategame-1
+patchBytes(0x8BDC, 0x5);  // _fupdategame-2
+patchBytes(0x9288, 0x5);  // _fupdategame-3
+patchBytes(0xA1E9, 0x5);  // _fupdategame-4
+patchBytes(0x7813, 0x5);  // _fupdategame-5
+patchBytes(0x7D1C, 0x5);  // _fupdategame-6
+patchBytes(0x6A14, 0x5);  // _fupdategame-7
+patchBytes(0x833C, 0x5);  // _fupdategame-8
+patchBytes(0x7E4B, 0x5);  // _fupdategame-9
+patchBytes(0xBBB8, 0x5);  // _fnormalkeyboardcontrol-1
+patchBytes(0xC473, 0x5);  // _fnormalkeyboardcontrol-2
+patchBytes(0xCD1E, 0x5);  // _fnormalkeyboardcontrol-3
+patchBytes(0xD5D9, 0x5);  // _fnormalkeyboardcontrol-4
+patchBytes(0xDF5B, 0x5);  // _fview3dkeyboardcontrol-1
+patchBytes(0xE7EB, 0x5);  // _fview3dkeyboardcontrol-2
+patchBytes(0xF06B, 0x5);  // _fview3dkeyboardcontrol-3
+patchBytes(0xF8FB, 0x5);  // _fview3dkeyboardcontrol-4
+patchBytes(0x35ABE, 0x5); // _fcanfireballmove
+patchBytes(0x3036E, 0x5); // _fcontrolboxes-1
+patchBytes(0x30880, 0x5); // _fcontrolboxes-2
+patchBytes(0x3114A, 0x5); // _fcontrolboxes-3
+patchBytes(0x5C19, 0x5);  // _fmaingameloop
+patchBytes(0x2E91E, 0x5); // _fmovebox
+patchBytes(0x31ABA, 0x5); // _fkillbox-1
+patchBytes(0x31DEC, 0x5); // _fkillbox-2
+patchBytes(0x57AF5, 0x5); // _fmenuloop5
+patchBytes(0x417A, 0x5);  // _fstartlevel-1
+patchBytes(0x4387, 0x5);  // _fstartlevel-2
+patchBytes(0x4638, 0x5);  // _fstartlevel-3
+patchBytes(0x4784, 0x5);  // _fendlevel
+patchBytes(0x107F4, 0x5); // _floadlevel
+patchBytes(0x46335, 0x5); // _fcontrolitems
+patchBytes(0x2B7CA, 0x5); // _fendtrampoline
+patchBytes(0x2BCF6, 0x5); // _fendtrampoline
+patchBytes(0x3393E, 0x5); // _fcontrolelectrotiles
+patchBytes(0x33FF7, 0x5); // _fcontrolspikes
+patchBytes(0x3ADCA, 0x5); // _fcontrolbeachball
+patchBytes(0x3B2DC, 0x5); // _fcontrolrobot
+patchBytes(0x3C27E, 0x5); // _fcontrolsaucer-1
+patchBytes(0x3CE8E, 0x5); // _fcontrolsaucer-2
+patchBytes(0x3D78E, 0x5); // _fcontrolbomber-1
+patchBytes(0x3D890, 0x5); // _fcontrolbomber-2
+patchBytes(0x3D986, 0x5); // _fcontrolbomber-3
+patchBytes(0x3E7EF, 0x5); // _fcontrolchomper-1
+patchBytes(0x3EBC5, 0x5); // _fcontrolchomper-2
+patchBytes(0x3ECD5, 0x5); // _fcontrolchomper-3
+patchBytes(0x3F84C, 0x5); // _fcontrolghost
+patchBytes(0x401DF, 0x5); // _fcontrolspirit
+patchBytes(0x40A3C, 0x5); // _fcontrolbrokenzbot
+patchBytes(0x414D8, 0x5); // _fcontrolshadowstinker-1
+patchBytes(0x424AF, 0x5); // _fcontrolshadowstinker-2
+patchBytes(0x4A047, 0x5); // _fchecksigns
+patchBytes(0x49A38, 0x5); // _fstartsign
+patchBytes(0x451A9, 0x5); // _fkillmonster-1
+patchBytes(0x454DB, 0x5); // _fkillmonster-2
+patchBytes(0x37823, 0x5); // _fcheckbutton
+patchBytes(0x46617, 0x5); // _fpickupitem
+//patchBytes(0x4BB30, 0x5); // _floadsounds
+
+// TODO: 0xA5E6
+// TODO: 0xA705
+// TODO: 0x68A9
+// TODO: 0x6855
+
+// Fix Player Deaths
+appendASM("fixplayer.asm");
+removeAbsReloc(0x2AB01);
+patchJMP(0x2AAFF, "fixkillplayer");
+addSymbol("fixkillplayer_back", 0x2AB09);
+
+removeAbsReloc(0x685F);
+patchJMP(0x685D, "fixupdateplayer1");
+addSymbol("fixupdateplayer1_back", 0x6867);
+
+removeAbsReloc(0x68B3);
+patchJMP(0x68B1, "fixupdateplayer2");
+addSymbol("fixupdateplayer2_back", 0x68BB);
+
+// Inject into setup
+appendASM("setupOverride.asm");
+patchJMP(0x1D985, "setupOverride");
+addSymbol("setupOverride_done", 0x1D98B);
+
+// Create Arno When Needed
+appendASM("loadLevelExpansion.asm");
+patchJNZ(0x13D6B, "loadLevelExpansion");
+
+// Load Sounds
+appendASM("loadSoundsArno.asm");
+patchJMP(0x4BFD7, "loadSoundsArno");
+addSymbol("loadSoundsArno_back", 0x4BFDD);
+
+// Box Creation
+appendASM("createbox.asm");
+patchJNZ(0x2C2E4, "boxCreateOverride");
+
+// Box Logic
+appendASM("boxLogic.asm");
+patchJMP(0x2FC03, "boxLavaDestroy");
+addSymbol("boxLavaDestroy_back", 0x2FC09);
+removeRelReloc(0x2FC39);
+patchJMP(0x2FC37, "boxLavaSink");
+addSymbol("boxLavaSink_back", 0x2FC3D);
+patchJMP(0x2F043, "boxFloat");
+addSymbol("boxFloat_back", 0x2F069);
+addSymbol("boxFloat_do", 0x2F0B0);
+addSymbol("lavaFloat", 0x2F0B0);
+addSymbol("boxWaterKill", 0x2F283);
+
+// Version Display
+appendASM("versionDisplay.asm");
+patchJMP(0x52FC2, "versionDisplayOverride");
+addSymbol("versionDisplayOverride_back", 0x52FC7);
+
+// Boulder Logic
+appendASM("boulderLogic.asm");
+removeRelReloc(0x2CBB0);
+patchJMP(0x2CBAE, "boulderLogicOverride");
+addSymbol("doBoulderDestroy", 0x2CBFB);
+addSymbol("originalBoulderDestroyCheck", 0x2CBB4);
+
+// Megacrate Logic
+appendASM("megacrateLogic.asm");
+patchJMP(0x30384, "megacrateLogic");
+addSymbol("megacrateLogic_back", 0x3038A);
+
+removeRelReloc(0x2C636);
+patchJMP(0x2C634, "createBoxPosition");
+addSymbol("createBoxPosition_back", 0x2C63A);
+
+// Superprism
+appendASM("superprism.asm");
+patchJMP(0x35195, "superprismfireball");
+addSymbol("doPrismFireball", 0x351AF);
+patchJMP(0x34FCC, "superprismfireball2");
+addSymbol("superprismfireball2back", 0x34FDA);
+patchJMP(0x3568D, "superprismfix");
+addSymbol("superprismfix_back", 0x3569B);
+
+patchJMP(0x3528D, "superprismnokill");

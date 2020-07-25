@@ -1,0 +1,7 @@
+appendASM("finalthingeyfix.asm");
+patchJMP(0x5E452, "magicstars");
+addSymbol("cubebrr", 0x5E477);
+
+appendASM("theicecase.asm");
+patchJMP(0x5E5D4, "areyoufrozen");
+addSymbol("nomorefrozen", 0x5E5D9);

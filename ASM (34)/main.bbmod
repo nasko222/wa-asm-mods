@@ -1,0 +1,7 @@
+appendASM("magic.asm");
+patchJMP(0x1C56A, "startmagic");
+addSymbol("endmagic", 0x1C583);
+
+appendASM("magic.asm");
+patchJMP(0x251B6, "startadv");
+addSymbol("endadv", 0x251DB);
