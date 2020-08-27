@@ -103,8 +103,8 @@ addSymbol("endsubbuttonrem2", 0x43311);
 patchJMP(0x43354, "startsubbuttonrem3");
 addSymbol("endsubbuttonrem3", 0x43359);
 //colorchangersub2
-patchJMP(0x4576F, "startsubbuttonrem");
-addSymbol("endsubbuttonrem", 0x45775);
+patchJMP(0x4479A, "startsubbuttonrem");
+addSymbol("endsubbuttonrem", 0x447A0);
 patchJMP(0x44829, "startsubbuttonrem2");
 addSymbol("endsubbuttonrem2", 0x4482F);
 patchJMP(0x44872, "startsubbuttonrem3");
@@ -112,3 +112,15 @@ addSymbol("endsubbuttonrem3", 0x44877);
 
 //change camera controll X to S (WAXD to WASD)
 patchBytes(0x59711, 0x1F);
+
+////update 1.01 stuff
+appendASM("update101.asm");
+//enables unused model frame 3 for coloured gate
+patchJMP(0x43BD8, "startframethreefix");
+addSymbol("endframethreefix", 0x43BDE);
+patchJMP(0x43C67, "startframethreefix2");
+addSymbol("endframethreefix2", 0x43C6D);
+patchJMP(0x43CB0, "startframethreefix3");
+addSymbol("endframethreefix3", 0x43CB5);
+//adds support for negative functions of the custom item below -4 (spy eye), (also -99 is stinker whistle)
+patchBytes(0x3E827, 0x00, 0xFF, 0xFF, 0xFF);
